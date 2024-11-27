@@ -52,6 +52,61 @@
         </div>
         <video id="home-video" src="asset/background-home.mp4" muted autoplay loop></video>
     </div>
+    <div class="about-home">
+        <img src="asset/KALPATARU-home.png" alt="">
+        <h1>KALPATARU</h1>
+        <p>Inspired by the symbol of life and balance, Kalpataru Resort is your sanctuary for rest, rejuvenation, and unforgettable memories. Surrounded by lush landscapes and breathtaking views, we offer a peaceful escape from the world’s hustle and bustle.</p>
+    </div>
+    <div class="home-category">
+        <h1>Discover the Essence of Paradise</h1>
+        <p>Indulge in a world of comfort, taste, rejuvenation, and adventure, all crafted for your unforgettable stay.</p>
+        <div class="area-home-category">
+            <a href="" class="box-home-category">
+                <div class="img-home-category">
+                    <div class="hover-home-category">
+                        <div class="inner-hover-home-category">
+                            <p>View Details</p>
+                        </div>
+                    </div>
+                    <img src="asset/room-villa.jpg" alt="">
+                </div>
+                <h3>Rooms & Villas</h3>
+            </a>
+            <a href="" class="box-home-category">
+                <div class="img-home-category">
+                    <div class="hover-home-category">
+                        <div class="inner-hover-home-category">
+                            <p>View Details</p>
+                        </div>
+                    </div>
+                    <img src="asset/restaurant-bar.jpg" alt="">
+                </div>
+                <h3>Restaurants & Bar</h3>
+            </a>
+            <a href="" class="box-home-category">
+                <div class="img-home-category">
+                    <div class="hover-home-category">
+                        <div class="inner-hover-home-category">
+                            <p>View Details</p>
+                        </div>
+                    </div>
+                    <img src="asset/spa.jpg" alt="">
+                </div>
+                <h3>Spa Treatments</h3>
+            </a>
+            <a href="" class="box-home-category">
+                <div class="img-home-category">
+                    <div class="hover-home-category">
+                        <div class="inner-hover-home-category">
+                            <p>View Details</p>
+                        </div>
+                    </div>
+                    <img src="asset/activities.jpg" alt="">
+                </div>
+                <h3>Activities</h3>
+            </a>
+        </div>
+    </div>
     <div class="" style="width: 100%; height: 100vh; background-color: aliceblue;"></div>
     <script src="plugins/jquery.js"></script>
     <script src="plugins/gsap.min.js"></script>
@@ -79,6 +134,17 @@
             $(".icon-nav-btn .icon-nav-hover").removeClass("hover");
             $(".inner-text-nav-btn").removeClass("hover");
         });
+
+        $(".box-home-category").mouseenter(function(){
+            $(this).find(".img-home-category img").addClass("hover");
+            $(this).find(".inner-hover-home-category").addClass("hover");
+        });
+        
+        $(".box-home-category").mouseleave(function(){
+            $(this).find(".img-home-category img").removeClass("hover");
+            $(this).find(".inner-hover-home-category").removeClass("hover");
+        });
+
         gsap.utils.toArray(".home").forEach(function(container) {
         let videoHome = container.querySelector("video");
   

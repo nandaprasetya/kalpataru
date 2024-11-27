@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="asset/KALPATARU.png" type="image/x-icon">
+</head>
+<body>
+    <div class="nav-logo">
+        <h1>KALPATARU</h1>
+    </div>
+    <div class="nav-btn">
+        <div class="nav-line">
+            <div class="inner-nav-line line-offset"></div>
+            <div class="inner-nav-line background-nav-line"></div>
+        </div>
+        <div class="inner-nav-btn">
+            <div class="text-nav-btn">
+                <div class="inner-text-nav-btn">
+                    <h1>HOME</h1>
+                    <h1>MENU</h1>
+                </div>
+            </div>
+            <div class="icon-nav-btn">
+                <div class="row-icon-nav">
+                    <div class="circle-icon-nav icon-nav-hover"></div>
+                    <div class="circle-icon-nav"></div>
+                    <div class="circle-icon-nav icon-nav-hover"></div>
+                </div>
+                <div class="row-icon-nav">
+                    <div class="circle-icon-nav"></div>
+                    <div class="circle-icon-nav"></div>
+                    <div class="circle-icon-nav"></div>
+                </div>
+                <div class="row-icon-nav">
+                    <div class="circle-icon-nav icon-nav-hover"></div>
+                    <div class="circle-icon-nav"></div>
+                    <div class="circle-icon-nav icon-nav-hover"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="text-about">
+            <h5>ALL ABOUT KALPATARU</h5>
+            <h1>Inspired by You, Designed for You</h1>
+            <p>SCROLL DOWN</p>
+        </div>
+    </div>
+    <div class="visi-misi">
+        <img src="asset/deluxe-resort.jpg" alt="">
+        <div class="text-visi-misi">
+            <h6>Our Vision</h6>
+            <img src="asset/bg-1.jpg" alt="">
+            <p>To be a sanctuary of tranquility, luxury, and memorable experiences for every guest, embracing nature and culture in perfect harmony.</p>
+        </div>
+    </div>
+    <div class="visi-misi">
+        <div class="text-visi-misi">
+            <h6>Our Mission</h6>
+            <img src="asset/refresh.jpg" alt="">
+            <p>Provide exceptional hospitality services that prioritize guest comfort and satisfaction. Offer unique and tailored experiences inspired by local culture and natural beauty.</p>
+        </div>
+        <img src="asset/tegalalang.jpg" alt="">
+    </div>
+    <div class="faq">
+        <div class="faq-container">
+            <p>FAQ</p>
+            <h2>Have Questions? We've Got Answers!</h2>
+            <div class="faq-item">
+              <div class="faq-question">What time is check-in and check-out?</div>
+              <div class="faq-answer">Check-in is at 3 PM, and check-out is at 11 AM.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">Is Wi-Fi available in all areas?</div>
+              <div class="faq-answer">Yes, complimentary Wi-Fi is available throughout the resort.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">Are pets allowed in the resort?</div>
+              <div class="faq-answer">Unfortunately, pets are not allowed at our resort.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">What activities are available at the resort?</div>
+              <div class="faq-answer">We offer a range of activities including yoga classes, guided nature walks, snorkeling, and cultural workshops.</div>
+            </div>
+        </div>  
+    </div>    
+    <script src="plugins/jquery.js"></script>
+    <script src="plugins/gsap.min.js"></script>
+    <script src="plugins/ScrollTrigger.min.js"></script>
+    <script src="plugins/lenis.min.js"></script>
+    <script>
+        const lenis = new Lenis()
+        lenis.on('scroll', (e) => {
+        });
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+        gsap.registerPlugin(ScrollTrigger);
+
+        $(document).ready(function () {
+            $(".faq-item").click(function () {
+                $(this).toggleClass("active");
+                $(this).find(".faq-answer").slideToggle();
+                $(this).siblings(".faq-item").removeClass("active");
+                $(this).siblings(".faq-item").find(".faq-answer").slideUp();
+            });
+        });
+
+    </script>
+</body>
+</html>
