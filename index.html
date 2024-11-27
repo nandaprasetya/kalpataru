@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALPATARU</title>
+    <link rel="shortcut icon" href="asset/KALPATARU.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-logo">
+        <h1>KALPATARU</h1>
+    </div>
+    <div class="nav-btn">
+        <div class="nav-line">
+            <div class="inner-nav-line line-offset"></div>
+            <div class="inner-nav-line background-nav-line"></div>
+        </div>
+        <div class="inner-nav-btn">
+            <div class="text-nav-btn">
+                <div class="inner-text-nav-btn">
+                    <h1>HOME</h1>
+                    <h1>MENU</h1>
+                </div>
+            </div>
+            <div class="icon-nav-btn">
+                <div class="row-icon-nav">
+                    <div class="circle-icon-nav icon-nav-hover"></div>
+                    <div class="circle-icon-nav"></div>
+                    <div class="circle-icon-nav icon-nav-hover"></div>
+                </div>
+                <div class="row-icon-nav">
+                    <div class="circle-icon-nav"></div>
+                    <div class="circle-icon-nav"></div>
+                    <div class="circle-icon-nav"></div>
+                </div>
+                <div class="row-icon-nav">
+                    <div class="circle-icon-nav icon-nav-hover"></div>
+                    <div class="circle-icon-nav"></div>
+                    <div class="circle-icon-nav icon-nav-hover"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home">
+        <div class="text-home">
+            <div class=""></div>
+            <h1>Your Heavenly Escape <br> Awaits You</h1>
+            <div class="scroll-bottom">
+                <p>SCROLL TO EXPLORE</p>
+            </div>
+        </div>
+        <video id="home-video" src="asset/background-home.mp4" muted autoplay loop></video>
+    </div>
+    <div class="" style="width: 100%; height: 100vh; background-color: aliceblue;"></div>
+    <script src="plugins/jquery.js"></script>
+    <script src="plugins/gsap.min.js"></script>
+    <script src="plugins/ScrollTrigger.min.js"></script>
+    <script src="plugins/lenis.min.js"></script>
+    <script>
+        const lenis = new Lenis()
+        lenis.on('scroll', (e) => {
+        });
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+        gsap.registerPlugin(ScrollTrigger);
+
+        $(".nav-btn").mouseenter(function(){
+            $(".icon-nav-btn").addClass("hover");
+            $(".icon-nav-btn .icon-nav-hover").addClass("hover");
+            $(".inner-text-nav-btn").addClass("hover");
+        });
+        
+        $(".nav-btn").mouseleave(function(){
+            $(".icon-nav-btn").removeClass("hover");
+            $(".icon-nav-btn .icon-nav-hover").removeClass("hover");
+            $(".inner-text-nav-btn").removeClass("hover");
+        });
+        gsap.utils.toArray(".home").forEach(function(container) {
+        let videoHome = container.querySelector("video");
+  
+      gsap.to(videoHome, {
+        y: () => videoHome.offsetHeight - container.offsetHeight,
+        ease: "none",
+        scrollTrigger: {
+          trigger: container,
+          scrub: true,
+          pin: false,
+          invalidateOnRefresh: true
+        },
+      }); 
+  });
+    </script>
+</body>
+</html>
