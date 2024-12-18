@@ -1,0 +1,40 @@
+.inner-transition .inner-transition-text{
+    transform: translateX(-150%);
+    transition: 0.5s ease-in;
+}
+/* .inner-transition:nth-child(2) .inner-transition-text{
+    transform: translateY(-150%);
+    transition-delay: 0.1s;
+    }
+    .inner-transition:nth-child(3) .inner-transition-text{
+        transform: translateX(150%);
+        transition-delay: 0.2s;
+        }
+        .inner-transition:nth-child(4) .inner-transition-text{
+            transform: translateY(150%);
+            transition-delay: 0.3s;
+            }
+            .inner-transition:nth-child(5) .inner-transition-text{
+                transform: translateX(-150%);
+                transition-delay: 0.2s;
+                }
+                .inner-transition:nth-child(6) .inner-transition-text{
+                    transform: translateY(150%);
+                    transition-delay: 0.3s;
+                    }
+                    .inner-transition:nth-child(7) .inner-transition-text{
+                        transform: translateX(-150%);
+                        transition-delay: 0.2s;
+                        }
+                        .inner-transition:nth-child(8) .inner-transition-text{
+                            transform: translateY(-150%);
+                            transition-delay: 0.1s;
+                            }
+                            .inner-transition:nth-child(9) .inner-transition-text{
+                                transform: translateX(150%);
+                                } */
+                                
+.inner-transition .inner-transition-text.none{
+    transition: 0.5s ease-out;
+    transform: translateX(0%);
+}

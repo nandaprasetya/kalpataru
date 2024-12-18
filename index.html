@@ -6,15 +6,61 @@
     <title>KALPATARU</title>
     <link rel="shortcut icon" href="asset/KALPATARU.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home-transition.css">
 </head>
 <body>
+    <div class="transition">
+        <div class="inner-transition">
+            <h1 class="inner-transition-text">K</h1>
+        </div>
+        <div class="inner-transition">
+            <h1 class="inner-transition-text">A</h1>
+        </div>
+        <div class="inner-transition">
+            <h1 class="inner-transition-text">L</h1>
+        </div>
+        <div class="inner-transition">
+            <h1 class="inner-transition-text">P</h1>
+        </div>
+        <div class="inner-transition">
+            <h1 class="inner-transition-text">A</h1>
+        </div>
+        <div class="inner-transition">
+            <h1 class="inner-transition-text">T</h1>
+        </div>
+        <div class="inner-transition">
+            <h1 class="inner-transition-text">A</h1>
+        </div>
+        <div class="inner-transition">
+            <h1 class="inner-transition-text">R</h1>
+        </div>
+        <div class="inner-transition">
+            <h1 class="inner-transition-text">U</h1>
+        </div>
+    </div>
+    <div id="cursor">
+        <div class="inner-cursor active">
+            <div class="circle-cursor-icon"></div>
+            <p>PLAY MOVIE</p>
+        </div>
+      </div>
     <div id="backToTop">
         <img src="asset/up-arrow.png" alt="">
+    </div>
+    <div class="preview-movie">
+        <div class="content-preview-movie">
+            <video id="movie-home" src="asset/background-home.mp4"></video>
+            <div class="controll-preview-movie">
+                <div class="line-movie"></div>
+                <img id="full-preview-movie" src="asset/expand.png" alt="">
+            </div>
+        </div>
+        <div class="close-preview-movie"></div>
     </div>
     <div class="nav-logo">
         <a href="index.html">KALPATARU</a>
     </div>
-    <div class="nav-btn">
+    <div class="nav-btn" id="nav-btn">
         <div class="nav-line">
             <div class="inner-nav-line line-offset"></div>
             <div class="inner-nav-line background-nav-line"></div>
@@ -45,24 +91,141 @@
             </div>
         </div>
     </div>
+    <div class="nav-menu">
+        <div class="preview-img-menu">
+            <img src="asset/patung-bali.jpg" alt="">
+        </div>
+        <div class="outer-nav-menu">
+            <div class="inner-nav-menu">
+                <div class="line-nav-menu"></div>
+                <a href="">Home</a>
+            </div>
+            <div class="inner-nav-menu">
+                <div class="line-nav-menu"></div>
+                <a href="">About Us</a>
+            </div>
+            <div class="inner-nav-menu">
+                <div class="line-nav-menu"></div>
+                <a href="">Rooms & Villa</a>
+            </div>
+            <div class="inner-nav-menu">
+                <div class="line-nav-menu"></div>
+                <a href="">Restaurants & Bar</a>
+            </div>
+            <div class="inner-nav-menu">
+                <div class="line-nav-menu"></div>
+                <a href="">Spa & Activities</a>
+            </div>
+            <div class="inner-nav-menu">
+                <div class="line-nav-menu"></div>
+                <a href="">Reservation</a>
+            </div>
+            <div class="footer-nav-menu">
+                <a href="">info@kalpataru.com</a>
+                <div class="line-footer-nav-menu"></div>
+                <a href="">INSTAGRAM</a>
+                <div class="line-footer-nav-menu"></div>
+                <a href="">FACEBOOK</a>
+                <div class="line-footer-nav-menu"></div>
+                <a href="">TIKTOK</a>
+                <div class="line-footer-nav-menu"></div>
+                <a href="">YOUTUBE</a>
+            </div>
+        </div>
+    </div>
     <div class="home">
         <div class="text-home">
             <div class=""></div>
             <h1>Your Heavenly Escape <br> Awaits You</h1>
             <div class="scroll-bottom">
-                <p>SCROLL TO EXPLORE</p>
+                <div class="inner-scroll-bottom">
+                    <p>SCROLL</p>
+                </div>
             </div>
         </div>
         <video id="home-video" src="asset/background-home.mp4" muted autoplay loop></video>
     </div>
     <div class="about-home">
-        <img src="asset/KALPATARU-home.png" alt="">
-        <h1>KALPATARU</h1>
-        <p>Inspired by the symbol of life and balance, Kalpataru Resort is your sanctuary for rest, rejuvenation, and unforgettable memories. Surrounded by lush landscapes and breathtaking views, we offer a peaceful escape from the world’s hustle and bustle.</p>
-        <a href="about.html">
-            <div class="about-home-circle"></div>
-            ABOUT  US
-        </a>
+        <div class="left-img-home-about">
+            <img src="asset/home-about1.jpg" alt="">
+        </div>
+        <div class="text-home-about">
+            <h1>KALPATARU</h1>
+            <p>Inspired by the symbol of life and balance, Kalpataru Resort is your sanctuary for rest, rejuvenation, and unforgettable memories. we offer a peaceful escape from the world’s hustle and bustle.</p>
+            <a href="about.html">
+                <div class="about-home-circle"></div>
+                <span>Learn About Us</span>
+            </a>
+        </div>
+        <div class="right-img-home-about">
+            <img src="asset/patung-bali.jpg" alt="">
+        </div>
+    </div>
+    <div class="home-room">
+        <div class="content-home-room">
+            <div class="text-home-room">
+                <p>ACCOMODATION</p>
+                <h1>Rooms <br> & Villas</h1>
+                <a href="">
+                    <div class="home-room-circle"></div>
+                    <span>View More</span>
+                </a>
+            </div>
+            <div class="img-content-home-room">
+                <a href="">ROOMS</a>
+                <img src="asset/room-villa.webp" alt="">
+            </div>
+        </div>
+        <img src="asset/home-villa.webp" alt="">
+    </div>
+    <div class="home-resta">
+        <div class="outer-home-resta">
+            <div class="inner-home-resta">
+                <div class="area-home-resta">
+                    <img src="asset/home-bakery.jpg" alt="">
+                    <div class="text-home-resta">
+                        <h1>Morning Rise</h1>
+                        <p>Discover a world of freshly baked bread, pastries, and artisan desserts, crafted daily to bring you delightful flavors.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-home-resta">
+                <div class="area-home-resta">
+                    <img src="asset/pexels-sebastian-coman-photography-1598188-3678182 (1).jpg" alt="">
+                    <div class="text-home-resta">
+                        <h1>Blue Lagoon Bites</h1>
+                        <p>Immerse yourself in a culinary journey with the freshest seafood, perfectly cooked and served with spectacular ocean views.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-home-resta">
+                <div class="area-home-resta">
+                    <img src="asset/mustafa-fatemi-ZEfHrVDF3NM-unsplash.jpg" alt="">
+                    <div class="text-home-resta">
+                        <h1>Pusaka Rasa</h1>
+                        <p>Celebrate the rich heritage of Indonesian cuisine with bold spices, vibrant flavors, and traditional recipes passed down for generations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-home-resta">
+                <div class="area-home-resta">
+                    <img src="asset/ryunosuke-kikuno-5jAfMVcE0Ag-unsplash.jpg" alt="">
+                    <div class="text-home-resta">
+                        <h1>Kaisen Sushi</h1>
+                        <p>Experience authentic Japanese dining with handcrafted sushi, fresh sashimi, and signature rolls that elevate every meal.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-home-resta">
+                <div class="area-home-resta">
+                    <img src="asset/valentin-kremer-S8BhJ0HB-WQ-unsplash.jpg" alt="">
+                    <div class="text-home-resta">
+                        <h1>Emperium Prestige</h1>
+                        <p>Enjoy premium cuts of meat, grilled to perfection and paired with bold flavors for a truly unforgettable dining experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="home-category">
         <h1>Discover the Essence of Paradise</h1>
@@ -75,9 +238,9 @@
                             <p>View Details</p>
                         </div>
                     </div>
-                    <img src="asset/room-villa.jpg" alt="">
+                    <img src="asset/yoga.jpg" alt="">
                 </div>
-                <h3>Rooms & Villas</h3>
+                <h3>Yoga</h3>
             </a>
             <a href="" class="box-home-category">
                 <div class="img-home-category">
@@ -86,9 +249,9 @@
                             <p>View Details</p>
                         </div>
                     </div>
-                    <img src="asset/restaurant-bar.jpg" alt="">
+                    <img src="asset/golf.jpg" alt="">
                 </div>
-                <h3>Restaurants & Bar</h3>
+                <h3>Playing Golf</h3>
             </a>
             <a href="" class="box-home-category">
                 <div class="img-home-category">
@@ -110,7 +273,7 @@
                     </div>
                     <img src="asset/activities.jpg" alt="">
                 </div>
-                <h3>Activities</h3>
+                <h3>Swimming</h3>
             </a>
         </div>
     </div>
@@ -151,6 +314,89 @@
     <script src="plugins/ScrollTrigger.min.js"></script>
     <script src="plugins/lenis.min.js"></script>
     <script>
+        setTimeout(() => {
+            $(".inner-transition-text").addClass("none");
+            setTimeout(() => {
+                $(".inner-transition-text").removeClass("none");
+                setTimeout(() => {
+                    $(".transition").addClass("none");
+                    setTimeout(() => {
+                        $(".transition").addClass("close");
+                    }, 500);
+                }, 300);
+            }, 1300);
+        }, 100);
+        let isNavActive = 0;
+        $("#nav-btn").click(function(){
+            if(isNavActive == 0){
+                $(".nav-menu").addClass("active");
+                $(".circle-icon-nav").addClass("active");
+                $(".inner-text-nav-btn h1").addClass("active");
+                $(".inner-nav-line").addClass("active");
+                setTimeout(() => {
+                    $(".preview-img-menu img").addClass("active");
+                    $(".inner-nav-menu").addClass("active");
+                    $(".footer-nav-menu").addClass("active");
+                }, 600);
+                isNavActive = 1;
+            }else if(isNavActive == 1){
+                $(".preview-img-menu img").removeClass("active");
+                $(".inner-nav-menu").removeClass("active");
+                $(".footer-nav-menu").removeClass("active");
+                setTimeout(() => {
+                $(".nav-menu").removeClass("active");
+                $(".circle-icon-nav").removeClass("active");
+                $(".inner-text-nav-btn h1").removeClass("active");
+                $(".inner-nav-line").removeClass("active");
+                }, 600);
+                isNavActive = 0;
+            }
+        });
+        $(".inner-nav-menu:nth-child(1)").mouseenter(function(){
+            $('.preview-img-menu img').attr('src', 'asset/patung-bali.jpg');
+        });
+        $(".inner-nav-menu:nth-child(2)").mouseenter(function(){
+            $('.preview-img-menu img').attr('src', 'asset/nav-about.jpg');
+        });
+        $(".inner-nav-menu:nth-child(3)").mouseenter(function(){
+            $('.preview-img-menu img').attr('src', 'asset/nav-room.jpg');
+        });
+        $(".inner-nav-menu:nth-child(4)").mouseenter(function(){
+            $('.preview-img-menu img').attr('src', 'asset/nav-restaurant.jpg');
+        });
+        $(".inner-nav-menu:nth-child(5)").mouseenter(function(){
+            $('.preview-img-menu img').attr('src', 'asset/nav-activities.jpg');
+        });
+        $(".inner-nav-menu:nth-child(6)").mouseenter(function(){
+            $('.preview-img-menu img').attr('src', 'asset/nav-reservation.jpg');
+        });
+        $(".inner-nav-menu").mouseenter(function(){
+            $(this).find(".line-nav-menu").addClass("hover");
+        });
+        $(".inner-nav-menu").mouseleave(function(){
+            $(this).find(".line-nav-menu").removeClass("hover");
+        });
+        function navEnter() {
+            $(".icon-nav-btn").addClass("hover");
+            $(".icon-nav-btn .icon-nav-hover").addClass("hover");
+            $(".inner-text-nav-btn").addClass("hover");    
+        }
+        function navLeave() {
+            $(".icon-nav-btn").removeClass("hover");
+            $(".icon-nav-btn .icon-nav-hover").removeClass("hover");
+            $(".inner-text-nav-btn").removeClass("hover");
+        }
+        $(".nav-btn").mouseenter(function(){
+            if(isNavActive == 0){
+                navEnter();
+            }
+        });
+
+        $(".nav-btn").mouseleave(function(){
+            if(isNavActive == 0){
+                navLeave();
+            }
+        });
         const lenis = new Lenis()
         lenis.on('scroll', (e) => {
         });
@@ -161,17 +407,112 @@
         requestAnimationFrame(raf);
         gsap.registerPlugin(ScrollTrigger);
 
-        $(".nav-btn").mouseenter(function(){
-            $(".icon-nav-btn").addClass("hover");
-            $(".icon-nav-btn .icon-nav-hover").addClass("hover");
-            $(".inner-text-nav-btn").addClass("hover");
+        let cursor = $("#cursor");
+        let wind = window.innerWidth;
+        let innerCursor = $(".inner-cursor");
+        let controllerFacilities = $(".controller-facilities-home");
+        
+        function movecursor(e) {
+          let widthcursor = $("#cursor").width()/2;
+          let heightcursor = $("#cursor").height()/2;
+            wind = window.innerWidth;
+
+            if(e.clientX > wind / 2){
+                gsap.to(cursor, {
+                duration: 0.3,
+                delay:0.1,
+                x: e.clientX - 15,
+                y: e.clientY - heightcursor,
+                ease: "power2.out"
+            });
+            }else{
+                gsap.to(cursor, {
+                duration: 0.3,
+                delay:0.1,
+                x: e.clientX - 15,
+                y: e.clientY - heightcursor,
+                ease: "power2.out"
+            });
+            }
+        }
+
+        $(window).on('mousemove', movecursor);
+        $(window).resize(movecursor);
+
+        $(".home").hover(function(){
+            $(".inner-cursor").addClass("active");
+            $(".inner-cursor p").text("PLAY MOVIE");
+        });
+        $(".home").mouseenter(function(){
+            $(".inner-cursor").addClass("active");
+            $(".inner-cursor p").text("PLAY MOVIE");
+        });
+        $(".home").mouseleave(function(){
+            $(".inner-cursor").removeClass("active");
         });
         
-        $(".nav-btn").mouseleave(function(){
-            $(".icon-nav-btn").removeClass("hover");
-            $(".icon-nav-btn .icon-nav-hover").removeClass("hover");
-            $(".inner-text-nav-btn").removeClass("hover");
+        $(".home").click(function(){
+            $(".preview-movie").addClass("active");
+            $(".preview-movie video").addClass("active");
+            $('#movie-home')[0].play();
+            $(".inner-cursor").removeClass("active");
         });
+        
+        $(".close-preview-movie").mouseenter(function(){
+            $(".inner-cursor").addClass("active");
+            $(".inner-cursor p").text("CLOSE MOVIE");
+        });
+        
+        $(".close-preview-movie").mouseleave(function(){
+            $(".inner-cursor").removeClass("active");
+        });
+        
+        $(".close-preview-movie").click(function(){
+            $(".preview-movie").removeClass("active");
+            $(".preview-movie video").removeClass("active");
+            $('#movie-home')[0].pause();
+            $(".inner-cursor p").text("PLAY MOVIE");
+        });
+        
+        $(".area-home-resta").mouseenter(function(){
+            $(".inner-cursor").addClass("active");
+            $(".inner-cursor p").text("VIEW MORE");
+        });
+
+        $(".area-home-resta").mouseleave(function(){
+            $(".inner-cursor").removeClass("active");
+        });
+
+        const videoElement = $('#movie-home')[0];
+
+        $("#full-preview-movie").click(function(){
+            console.log("test");
+            if (videoElement.requestFullscreen) {
+                videoElement.requestFullscreen();
+            } else if (videoElement.mozRequestFullScreen) {
+                videoElement.mozRequestFullScreen();
+            } else if (videoElement.webkitRequestFullscreen) {
+                videoElement.webkitRequestFullscreen();
+            } else if (videoElement.msRequestFullscreen) {
+                videoElement.msRequestFullscreen();
+            }
+        });
+
+        let sections = gsap.utils.toArray(".inner-home-resta");
+    
+        gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".outer-home-resta",
+            pin: ".home-resta",
+            pinSpacing: true,
+            scrub: 1,
+            end: "+=3000",
+        }
+        });
+        
+        
 
         $(".box-home-category").mouseenter(function(){
             $(this).find(".img-home-category img").addClass("hover");
@@ -216,6 +557,7 @@
         }
       });
 
+    $('#backToTop').fadeOut();
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
           $('#backToTop').fadeIn();
@@ -223,8 +565,8 @@
           $('#backToTop').fadeOut();
         }
     });
-        $('#backToTop').click(function() {
-        $('html, body').animate({ scrollTop: 0 }, 500);
+    $('#backToTop').click(function() {
+    $('html, body').animate({ scrollTop: 0 }, 500);
         return false;
     });
     </script>
